@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #344e41;
+}
+
+.contenedor{
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: #ffff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.6s ease-out;
+}
+
+.cuadroBusqueda{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cuadroBusqueda input{
+    color: #22223b;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.cuadroBusqueda input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #22223b;
+    text-transform: none;
+}
+
+.cuadroBusqueda button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #22223b;
+    background: #a3b18a;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+.cuadroBusqueda button:hover{
+    color: #ffff;
+    background: #283618;
+}
+
+.cuadroClima{
+    text-align: center;
+    height: max-content;
+}
+
+.cuadroClima img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.cuadroClima .temperatura{
+    position: relative;
+    color: #344e41;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.cuadroClima .temperatura span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.cuadroClima .descricion{
+    color: #344e41;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.detallesClima{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.detallesClima .humedad .detallesClima .viento{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.detallesClima .humedad{
+    padding-left: 20px;
+    justify-content: flex-end;
+}
+
+.detallesClima .viento{
+    padding-right: 20px;
+    justify-content: flex-start;
+}
+
+.detallesClima i{
+    color: #344e41;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.detallesClima{
+    color: #344e41;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.detallesClima p{
+    color: #344e41;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.notFound{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.notFound img{
+    width: 100%;
+}
+
+.notFound p{
+    color: #344e41;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.cuadroClima .detallesClima{
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.toastifyClase{
+    top: 51rem !important;
+    transform: translateX(-58%) !important;
+}
